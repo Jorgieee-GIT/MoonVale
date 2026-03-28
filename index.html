@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moonvale Store</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <a href="index.html">
+    <img src="assets/img/moonvale-logo-bgr.png" class="logo">
+  </a>
+  <div class="header-right">
+    <div class="discord-wrapper">
+      <img src="assets/img/discord.webp" class="icon" onclick="openDiscord()">
+      <span class="discord-tooltip">Join our Discord server!</span>
+    </div>
+    <div class="cart" onclick="toggleCart()">cart (<span id="cartCount">0</span>)</div>
+  </div>
+</header>
+
+<!-- HERO / IP SECTION -->
+<section class="hero">
+  <!-- Bedrock: two stacked boxes -->
+  <div class="ip-stack">
+    <div class="ip" onclick="copyIP('bedrock')">
+      Bedrock IP:<br><b>moonvalesmp.xyz</b>
+    </div>
+    <div class="ip" onclick="copyIP('bedrockPort')">
+      Bedrock Port:<br><b>19013</b>
+    </div>
+  </div>
+
+  <!-- Center logo -->
+   <a href="index.html">
+    <img src="assets/img/moonvale-logo-bgr.png" class="hero-logo">
+   </a>
+  
+
+  <!-- Java: single box -->
+  <div class="ip-java" onclick="copyIP('java')">
+    Java IP:<br><b>moonvalesmp.xyz</b>
+  </div>
+</section>
+
+<!-- NAVIGATION -->
+<section class="nav-buttons">
+  <a href="#" class="nav-link">
+    <span class="nav-title">STORE</span>
+    <span class="nav-subtitle">View paid ranks and keys →</span>
+  </a>
+
+  <a href="pages/vote.html#vote" class="nav-link">
+    <span class="nav-title">VOTE</span>
+    <span class="nav-subtitle">Get rewards by voting →</span>
+  </a>
+
+  <a href="https://discord.gg/moonvale" target="_blank" class="nav-link">
+    <span class="nav-title">DISCORD</span>
+    <span class="nav-subtitle">Join our discord server →</span>
+  </a>
+
+  <a href="#how-to-join" class="nav-link">
+    <span class="nav-title">JOIN</span>
+    <span class="nav-subtitle">How to join guide →</span>
+  </a>
+
+  <a href="#" class="nav-link">
+    <span class="nav-title">RULES</span>
+    <span class="nav-subtitle">Read server rules →</span>
+  </a>
+
+  <a href="#" class="nav-link">
+    <span class="nav-title">STREAMER</span>
+    <span class="nav-subtitle">Our featured streamers →</span>
+  </a>
+
+  <a href="#" class="nav-link">
+    <span class="nav-title">STAFFS</span>
+    <span class="nav-subtitle">Learn who runs the server →</span>
+  </a>
+</section>
+
+<!-- UPDATES -->
+<section class="updates">
+  <div class="updates-label">LATEST UPDATE</div>
+
+  <div class="update-card">
+    <img src="assets/img/update1.webp" alt="latest-update">
+    <div class="update-text">
+      <h3>Pinata Update is here!</h3>
+      <p>Players can now collect a <b>Pinata Key</b> and use it for exciting rewards!</p>
+      <ul>
+        <li>Visit <b>/warp pinata</b> to see if the Pinata activates.</li>
+        <li>Use your key at <b>/warp crate</b> to unlock special prizes.</li>
+      </ul>
+      <p>Don't miss out, every Pinata could hold amazing items!</p>
+      <p>Including a <b>Leviathan Key</b>!!!</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO JOIN SECTION -->
+<section class="how-to-join" id="how-to-join">
+  <div class="updates-label">HOW TO JOIN</div>
+  <div class="join-container">
+    <!-- Java Edition -->
+    <div class="join-card">
+      <img src="assets/img/java.jpg" alt="Java Edition">
+      <div class="join-text">
+        <h3>Java Edition</h3>
+        <p>Connect using the server IP directly. No extra port needed, just enter the IP:<b><i>
+        "moonvalesmp.xyz"</b></i> in your multiplayer server list to join.</p>
+      </div>
+    </div>
+
+    <!-- Bedrock Edition -->
+    <div class="join-card">
+      <img src="assets/img/bedrock.jpg" alt="Bedrock Edition">
+      <div class="join-text">
+        <h3>Bedrock Edition</h3>
+        <p>Requires both the server IP: <b><i>"moonvalesmp.xyz"</b></i> and the port:<b><i>
+        "19013"</b></i>. Enter them in your “Add Server” section in Bedrock to join.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <!-- Column 1: Credits -->
+    <div class="footer-col">
+      <h4>© 2026 Moonvale</h4>
+      <div class="footer-icons">
+        <img src="assets/img/discord.webp" class="icon" onclick="openDiscord()" title="Discord">
+      </div>
+    </div>
+
+    <!-- Column 2: Useful Links -->
+    <div class="footer-col">
+      <h4>Useful Links</h4>
+      <a href="index.html">≧◉ᴥ◉≦ Home</a>
+      <a href="pages/store.html">(◔◡◔) Store</a>
+      <a href="pages/vote.html">(>‿◠) Vote</a>
+      <a href="pages/rule.html">(✿◠‿◠)  Rules</a>
+    </div>
+
+    <!-- Column 3: Support -->
+    <div class="footer-col">
+      <h4>Support</h4>
+      <p>Need any questions answered? Ask the community/staff on Discord.</p>
+      <a href="https://discord.gg/moonvale" target="_blank">Support</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-left">
+      <button onclick="window.scrollTo({top:0})">Back to top</button>
+    </div>
+    <p>Web Dev - Horheee</p>
+  </div>
+</footer>
+
+<!-- CART MODAL -->
+<div id="cartModal" class="cart-modal">
+  <h3>Your Cart</h3>
+  <ul id="cartItems"></ul>
+</div>
+
+<script src="assets/javascript/script.js"></script>
+</body>
+</html>

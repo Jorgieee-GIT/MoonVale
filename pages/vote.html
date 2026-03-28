@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moonvale Vote</title>
+  <link rel="stylesheet" href="../assets/css/vote.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <a href="../index.html">
+    <img src="../assets/img/moonvale-logo-bgr.png" class="logo">
+  </a>
+  <div class="header-right">
+    <div class="discord-wrapper">
+      <img src="../assets/img/discord.webp" class="icon" onclick="openDiscord()">
+      <span class="discord-tooltip">Join our Discord server!</span>
+    </div>
+  </div>
+</header>
+
+<!-- HERO / IP SECTION -->
+<section class="hero">
+  <!-- Bedrock: two stacked boxes -->
+  <div class="ip-stack">
+    <div class="ip" onclick="copyIP('bedrock')">
+      Bedrock IP:<br><b>moonvalesmp.xyz</b>
+    </div>
+    <div class="ip" onclick="copyIP('bedrockPort')">
+      Bedrock Port:<br><b>19013</b>
+    </div>
+  </div>
+
+  <!-- Center logo -->
+  <a href="../index.html">
+    <img src="../assets/img/moonvale-logo-bgr.png" class="hero-logo">
+  <a>
+
+  <!-- Java: single box -->
+  <div class="ip-java" onclick="copyIP('java')">
+    Java IP:<br><b>moonvalesmp.xyz</b>
+  </div>
+</section>
+
+<!-- NAVIGATION -->
+<section class="nav-buttons">
+  <a href="../index.html" class="nav-link">
+    <span class="nav-title">BACK</span>
+    <span class="nav-subtitle">← Back to homepaege</span>
+  </a>
+</section>
+
+<!-- VOTE SECTION -->
+<section class="vote" id="vote">
+  <div class="vote-label">VOTE FOR MOONVALE</div>
+
+  <div class="vote-desc">
+    Every vote counts toward the <b>Piñata Event</b><br>30 votes = Piñata spawns at <b>/warp crates</b>!
+  </div>
+
+  <div class="vote-container">
+
+    <!-- Each vote item -->
+    <div class="vote-item">
+      <div class="vote-title">Site 1</div>
+      <a href="https://minecraft-mp.com/server/355761/vote/" target="_blank">
+        minecraft-mp.com
+      </a>
+    </div>
+
+    <div class="vote-item">
+      <div class="vote-title">Site 2</div>
+      <a href="https://minecraftpocket-servers.com/server/132969/vote/" target="_blank">
+        minecraftpocket-servers.com
+      </a>
+    </div>
+
+    <div class="vote-item">
+      <div class="vote-title">Site 3</div>
+      <a href="https://minecraft.buzz/vote/19817" target="_blank">
+        minecraft.buzz
+      </a>
+    </div>
+
+    <div class="vote-item">
+      <div class="vote-title">Site 4</div>
+      <a href="https://minecraftservers.org/vote/685257" target="_blank">
+        minecraftservers.org
+      </a>
+    </div>
+
+    <div class="vote-item">
+      <div class="vote-title">Site 5</div>
+      <a href="https://minecraftbestservers.com/server-moonvale.6711/vote" target="_blank">
+        minecraftbestservers.com
+      </a>
+    </div>
+
+    <div class="vote-item">
+      <div class="vote-title">Site 6</div>
+      <a href="https://www.minecraftiplist.com/server/MoonVale-39348/vote" target="_blank">
+        minecraftiplist.com
+      </a>
+    </div>
+
+    <div class="vote-item">
+      <div class="vote-title">Site 7</div>
+      <a href="https://topminecraftservers.org/vote/43020" target="_blank">
+        topminecraftservers.org
+      </a>
+    </div>
+
+    <div class="vote-item">
+      <div class="vote-title">Site 8</div>
+      <a href="https://minecraft.menu/server-moonvale.6023/vote" target="_blank">
+        minecraft.menu
+      </a>
+    </div>
+
+    <div class="vote-item">
+      <div class="vote-title">Site 9</div>
+      <a href="https://minecraft-server-list.com/server/518716/vote/" target="_blank">
+        minecraft-server-list.com
+      </a>
+    </div>
+
+    <div class="vote-item">
+      <div class="vote-title">Site 10</div>
+      <a href="https://minecraftservers.me/server/moonvale.25378/vote" target="_blank">
+        minecraftservers.me
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-col">
+      <h4>© 2026 Moonvale</h4>
+      <div class="footer-icons">
+        <img src="../assets/img/discord.webp" class="icon" onclick="openDiscord()">
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Useful Links</h4>
+      <a href="../index.html">≧◉ᴥ◉≦ Home</a>
+      <a href="store.html">(◔◡◔) Store</a>
+      <a href="vote.html">(>‿◠) Vote</a>
+      <a href="rule.html">(✿◠‿◠)  Rules</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Support</h4>
+      <p>Need help? Ask the community on Discord.</p>
+      <a href="https://discord.gg/moonvale" target="_blank">Support</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-left">
+      <button onclick="window.scrollTo({top:0})">Back to top</button>
+    </div>
+    <p>Web Dev - Horheee</p>
+  </div>
+</footer>
+<script src="../assets/javascript/vote.js"></script>
+</body>
+</html>
