@@ -8,6 +8,11 @@ body {
   overflow-x: hidden;
 }
 
+/* Apply to all elements you want to anchor to */
+[id] {
+  scroll-margin-top: 100px; /* height of your header + a little extra */
+}
+
 /* HEADER */
 .header {
   position: fixed;
@@ -180,11 +185,10 @@ body {
 .nav-buttons {
   text-align: center;
   background: #141414;
-  padding: 40px 150px 20px 150px;
+  padding: 40px 150px 8px 149.7px;
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
-  gap: 12px;
 }
 
 .nav-buttons button {
@@ -208,7 +212,7 @@ body {
 
 .nav-buttons .nav-link {
   margin: 1px;
-  padding: 25px 5px;
+  padding: 4px 5px;
   font-size: 16px;
   font-weight: bold;
   color: white;
@@ -427,6 +431,38 @@ footer {
   margin: 0;
   font-size: 14px;
   color: #e2d9f0;
+}
+
+/* TOAST NOTIFICATION */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #1e1e1e;
+  color: #e2d9f0;
+  padding: 15px 20px 15px 50px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  width: 250px;
+  max-width: 90%;
+  opacity: 0.8;
+}
+
+.toast.show {
+  opacity: 0.8;
+  transform: translateY(-10px);
+  pointer-events: auto;
+}
+
+.toast img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
 }
 
 /* ============================================================

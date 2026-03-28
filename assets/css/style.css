@@ -8,6 +8,11 @@ body {
   overflow-x: hidden;
 }
 
+/* Apply to all elements you want to anchor to */
+[id] {
+  scroll-margin-top: 100px; /* height of your header + a little extra */
+}
+
 /* HEADER */
 .header {
   position: fixed;
@@ -318,6 +323,12 @@ body {
   margin-top: 0;
   margin-bottom: 10px;
   color: #d8b4fe;
+}
+
+ul {
+  margin: 0;      
+  padding-left: 20px; 
+  line-height: 1.3; 
 }
 
 .update-text p {
@@ -833,6 +844,7 @@ button[onclick="scrollTopPage()"]:hover {
   .update-text p {
     font-size: 14px;
   }
+
 
   /* How to join */
   .how-to-join {
