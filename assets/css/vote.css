@@ -94,10 +94,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
   padding: 120px 150px 80px 150px;
   border-bottom: 1px solid rgba(255,255,255,0.05);
-  min-height: 400px;
+  min-height: 290px;
   z-index: 1;
 }
 
@@ -119,6 +118,8 @@ body {
 }
 
 .hero-logo {
+  display: flex;
+  align-items: center;
   height: 400px;
   filter: drop-shadow(0 0 15px rgba(168,85,247,0.5));
   animation: hero-bounce 3s infinite alternate;
@@ -455,8 +456,6 @@ footer {
   /* Hero */
   .hero {
     padding: 100px 40px 80px 40px;
-    gap: 30px;
-    flex-wrap: wrap;
     justify-content: center;
   }
 
@@ -571,7 +570,7 @@ footer {
   }
 
   .hero-logo {
-    height: 370px;
+    height: 260px;
   }
 
   .hero > * {
